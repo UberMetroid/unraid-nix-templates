@@ -1,0 +1,28 @@
+{
+  "name": "dokuwiki",
+  "display_name": "DokuWiki",
+  "description": "DokuWiki Wiki Engine",
+  "url": "https://www.dokuwiki.org/",
+  "command": "exec nix run nixpkgs#dokuwiki",
+  "default_ports": [
+    {
+      "host": 80,
+      "container": 80,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-file-text-o",
+  "meta": {
+    "version": "2025-05-14b",
+    "license": "GPL-2.0-only",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "1000101",
+      "e1mo"
+    ],
+    "programs": []
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "influxdb",
+  "display_name": "InfluxDB",
+  "description": "InfluxDB Time Series DB",
+  "url": "https://www.influxdata.com/",
+  "command": "exec nix run nixpkgs#influxdb",
+  "default_ports": [
+    {
+      "host": 8086,
+      "container": 8086,
+      "label": "API"
+    }
+  ],
+  "icon": "fa-database",
+  "meta": {
+    "version": "1.12.2",
+    "license": "MIT",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "zimbatm"
+    ],
+    "programs": [
+      "influx",
+      "influx_inspect",
+      "influx_tools",
+      "influxd"
+    ]
+  }
+}

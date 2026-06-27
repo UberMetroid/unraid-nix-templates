@@ -1,0 +1,42 @@
+{
+  "name": "matrix-synapse",
+  "display_name": "Matrix Synapse",
+  "description": "Matrix Synapse Chat Gateway",
+  "url": "https://matrix.org/",
+  "command": "exec nix run nixpkgs#matrix-synapse",
+  "default_ports": [
+    {
+      "host": 8008,
+      "container": 8008,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-comments",
+  "meta": {
+    "version": "1.154.0",
+    "license": "AGPL-3.0-or-later",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "sumnerevans",
+      "Ma27",
+      "mguentner"
+    ],
+    "programs": [
+      "export_signing_key",
+      "generate_config",
+      "generate_log_config",
+      "generate_signing_key",
+      "hash_password",
+      "register_new_matrix_user",
+      "synapse_homeserver",
+      "synapse_port_db",
+      "synapse_review_recent_signups",
+      "synapse_worker",
+      "synctl",
+      "update_synapse_database"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "rsync",
+  "display_name": "Rsync",
+  "description": "Fast and versatile remote and local file-copying tool",
+  "url": "https://rsync.samba.org/",
+  "command": "exec nix run nixpkgs#rsync",
+  "default_ports": [
+    {
+      "host": 873,
+      "container": 873,
+      "label": "Rsync Port"
+    }
+  ],
+  "icon": "fa-refresh",
+  "meta": {
+    "version": "3.4.1",
+    "license": "GPL-3.0-or-later",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "balsoft",
+      "infinisil",
+      "andir"
+    ],
+    "programs": [
+      "rsync",
+      "rsync-ssl"
+    ]
+  }
+}

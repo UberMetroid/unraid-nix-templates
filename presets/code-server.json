@@ -1,0 +1,30 @@
+{
+  "name": "code-server",
+  "display_name": "Code-server",
+  "description": "Code-server VSCode Web Editor",
+  "url": "https://github.com/coder/code-server",
+  "command": "exec nix run nixpkgs#code-server -- --bind-addr=0.0.0.0:8080 --user-data-dir=/config",
+  "default_ports": [
+    {
+      "host": 8080,
+      "container": 8080,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "4.115.0",
+    "license": "MIT",
+    "platforms": [
+      "x86_64-linux",
+      "aarch64-linux"
+    ],
+    "maintainers": [
+      "henkery",
+      "code-asher"
+    ],
+    "programs": [
+      "code-server"
+    ]
+  }
+}

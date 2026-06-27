@@ -1,0 +1,24 @@
+{
+  "name": "krusader",
+  "display_name": "Krusader",
+  "description": "Krusader File Manager Web GUI",
+  "url": "https://krusader.org/",
+  "command": "exec nix run nixpkgs#krusader",
+  "default_ports": [
+    {
+      "host": 5800,
+      "container": 5800,
+      "label": "Web GUI"
+    }
+  ],
+  "icon": "fa-folder-open-o",
+  "meta": {
+    "version": "2.9.0",
+    "license": "GPL-2.0-only",
+    "platforms": [],
+    "maintainers": [],
+    "programs": [
+      "krusader"
+    ]
+  }
+}

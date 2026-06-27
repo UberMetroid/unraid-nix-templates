@@ -1,0 +1,29 @@
+{
+  "name": "linkwarden",
+  "display_name": "Linkwarden",
+  "description": "Linkwarden Bookmark Manager",
+  "url": "https://linkwarden.app/",
+  "command": "exec nix run nixpkgs#linkwarden",
+  "default_ports": [
+    {
+      "host": 3000,
+      "container": 3000,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-bookmark-o",
+  "meta": {
+    "version": "2.14.0",
+    "license": "AGPL-3.0-only",
+    "platforms": [
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "jvanbruegge"
+    ],
+    "programs": [
+      "linkwarden",
+      "start.sh"
+    ]
+  }
+}

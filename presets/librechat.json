@@ -1,0 +1,30 @@
+{
+  "name": "librechat",
+  "display_name": "LibreChat",
+  "description": "LibreChat Advanced Client",
+  "url": "https://librechat.ai/",
+  "command": "exec nix run nixpkgs#librechat",
+  "default_ports": [
+    {
+      "host": 3080,
+      "container": 3080,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-magic",
+  "meta": {
+    "version": "0.8.6",
+    "license": "MIT",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "gepbird",
+      "niklaskorz"
+    ],
+    "programs": [
+      "librechat-server"
+    ]
+  }
+}

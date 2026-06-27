@@ -1,0 +1,26 @@
+{
+  "name": "photoprism",
+  "display_name": "PhotoPrism",
+  "description": "PhotoPrism AI Gallery",
+  "url": "https://photoprism.app/",
+  "command": "exec nix run nixpkgs#photoprism",
+  "default_ports": [
+    {
+      "host": 2342,
+      "container": 2342,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-cloud",
+  "meta": {
+    "version": "251130-b3068414c",
+    "license": "AGPL-3.0-only",
+    "platforms": [],
+    "maintainers": [
+      "BeneSim"
+    ],
+    "programs": [
+      "photoprism"
+    ]
+  }
+}

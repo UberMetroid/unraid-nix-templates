@@ -1,0 +1,30 @@
+{
+  "name": "authelia",
+  "display_name": "Authelia",
+  "description": "Authelia Authentication",
+  "url": "https://www.authelia.com/",
+  "command": "exec nix run nixpkgs#authelia -- --config /config/configuration.yml",
+  "default_ports": [
+    {
+      "host": 9091,
+      "container": 9091,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-lock",
+  "meta": {
+    "version": "4.39.20",
+    "license": "Apache-2.0",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "06kellyjac",
+      "nicomem"
+    ],
+    "programs": [
+      "authelia"
+    ]
+  }
+}

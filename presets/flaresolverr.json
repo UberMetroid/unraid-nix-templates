@@ -1,0 +1,29 @@
+{
+  "name": "flaresolverr",
+  "display_name": "Flaresolverr",
+  "description": "Flaresolverr Cloudflare Proxy",
+  "url": "https://github.com/FlareSolverr/FlareSolverr",
+  "command": "exec nix run nixpkgs#flaresolverr",
+  "default_ports": [
+    {
+      "host": 8191,
+      "container": 8191,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "3.5.0",
+    "license": "MIT",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "diogotcorreia"
+    ],
+    "programs": [
+      "flaresolverr"
+    ]
+  }
+}

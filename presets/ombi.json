@@ -1,0 +1,29 @@
+{
+  "name": "ombi",
+  "display_name": "Ombi",
+  "description": "Ombi Requests Portal",
+  "url": "https://ombi.io/",
+  "command": "exec nix run nixpkgs#ombi",
+  "default_ports": [
+    {
+      "host": 3579,
+      "container": 3579,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "4.47.1",
+    "license": "GPL-2.0-only",
+    "platforms": [
+      "x86_64-linux",
+      "aarch64-linux"
+    ],
+    "maintainers": [
+      "andreisergiu98"
+    ],
+    "programs": [
+      "Ombi"
+    ]
+  }
+}

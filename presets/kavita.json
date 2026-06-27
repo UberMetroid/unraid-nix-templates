@@ -1,0 +1,30 @@
+{
+  "name": "kavita",
+  "display_name": "Kavita",
+  "description": "Kavita Reader",
+  "url": "https://www.kavitareader.com/",
+  "command": "exec nix run nixpkgs#kavita",
+  "default_ports": [
+    {
+      "host": 5000,
+      "container": 5000,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "0.9.0.2",
+    "license": "GPL-3.0-only",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "Misterio77",
+      "nevivurn"
+    ],
+    "programs": [
+      "kavita"
+    ]
+  }
+}

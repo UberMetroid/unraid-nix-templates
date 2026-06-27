@@ -1,0 +1,30 @@
+{
+  "name": "readarr",
+  "display_name": "Readarr",
+  "description": "Readarr Book Manager",
+  "url": "https://readarr.com/",
+  "command": "exec nix run nixpkgs#readarr",
+  "default_ports": [
+    {
+      "host": 8787,
+      "container": 8787,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-book",
+  "meta": {
+    "version": "0.4.18.2805",
+    "license": "GPL-3.0",
+    "platforms": [
+      "x86_64-linux",
+      "aarch64-linux"
+    ],
+    "maintainers": [
+      "jocelynthode",
+      "devusb"
+    ],
+    "programs": [
+      "Readarr"
+    ]
+  }
+}

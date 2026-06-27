@@ -1,0 +1,36 @@
+{
+  "name": "netdata",
+  "display_name": "Netdata",
+  "description": "Netdata Performance Agent",
+  "url": "https://www.netdata.cloud/",
+  "command": "exec nix run nixpkgs#netdata -D",
+  "default_ports": [
+    {
+      "host": 19999,
+      "container": 19999,
+      "label": "Web GUI"
+    }
+  ],
+  "icon": "fa-bar-chart",
+  "meta": {
+    "version": "2.10.3",
+    "license": "",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "mkg20001",
+      "rhoriguchi"
+    ],
+    "programs": [
+      "nd-mcp",
+      "nd-run",
+      "netdata",
+      "netdata-claim.sh",
+      "netdata-edit-config",
+      "netdatacli",
+      "systemd-cat-native"
+    ]
+  }
+}

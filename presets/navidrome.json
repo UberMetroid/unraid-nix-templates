@@ -1,0 +1,30 @@
+{
+  "name": "navidrome",
+  "display_name": "Navidrome",
+  "description": "Navidrome Music Server",
+  "url": "https://www.navidrome.org/",
+  "command": "exec nix run nixpkgs#navidrome -- --configfile /config/navidrome.toml",
+  "default_ports": [
+    {
+      "host": 4533,
+      "container": 4533,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-music",
+  "meta": {
+    "version": "0.61.2",
+    "license": "GPL-3.0-only",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "aciceri",
+      "tebriel"
+    ],
+    "programs": [
+      "navidrome"
+    ]
+  }
+}

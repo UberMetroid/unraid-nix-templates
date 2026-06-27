@@ -1,0 +1,35 @@
+{
+  "name": "heimdall",
+  "display_name": "Heimdall",
+  "description": "Heimdall Dashboard GUI",
+  "url": "https://heimdall.site/",
+  "command": "exec nix run nixpkgs#heimdall",
+  "default_ports": [
+    {
+      "host": 80,
+      "container": 80,
+      "label": "HTTP"
+    },
+    {
+      "host": 443,
+      "container": 443,
+      "label": "HTTPS"
+    }
+  ],
+  "icon": "fa-tachometer",
+  "meta": {
+    "version": "2.2.2",
+    "license": "MIT",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "surfaceflinger",
+      "timschumi"
+    ],
+    "programs": [
+      "heimdall"
+    ]
+  }
+}

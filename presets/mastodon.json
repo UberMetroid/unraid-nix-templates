@@ -1,0 +1,34 @@
+{
+  "name": "mastodon",
+  "display_name": "Mastodon",
+  "description": "Mastodon Decentralized Social",
+  "url": "https://joinmastodon.org/",
+  "command": "exec nix run nixpkgs#mastodon",
+  "default_ports": [
+    {
+      "host": 3000,
+      "container": 3000,
+      "label": "Web"
+    },
+    {
+      "host": 4000,
+      "container": 4000,
+      "label": "Streaming"
+    }
+  ],
+  "icon": "fa-share-alt",
+  "meta": {
+    "version": "4.5.11",
+    "license": "AGPL-3.0-or-later",
+    "platforms": [
+      "x86_64-linux",
+      "aarch64-linux"
+    ],
+    "maintainers": [
+      "happy-river",
+      "erictapen",
+      "Izorkin"
+    ],
+    "programs": []
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "gitea",
+  "display_name": "Gitea",
+  "description": "Gitea Git Server",
+  "url": "https://gitea.io/",
+  "command": "exec nix run nixpkgs#gitea -- web --work-path /config",
+  "default_ports": [
+    {
+      "host": 3000,
+      "container": 3000,
+      "label": "HTTP"
+    },
+    {
+      "host": 2222,
+      "container": 22,
+      "label": "SSH"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "1.26.2",
+    "license": "MIT",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "techknowlogick",
+      "SuperSandro2000"
+    ],
+    "programs": [
+      "gitea"
+    ]
+  }
+}

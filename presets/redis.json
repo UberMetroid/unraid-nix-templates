@@ -1,0 +1,34 @@
+{
+  "name": "redis",
+  "display_name": "Redis",
+  "description": "Redis Cache Server",
+  "url": "https://redis.io/",
+  "command": "exec nix run nixpkgs#redis",
+  "default_ports": [
+    {
+      "host": 6379,
+      "container": 6379,
+      "label": "Redis Port"
+    }
+  ],
+  "icon": "fa-database",
+  "meta": {
+    "version": "8.8.0",
+    "license": "AGPL-3.0-only",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "Hythera"
+    ],
+    "programs": [
+      "redis-benchmark",
+      "redis-check-aof",
+      "redis-check-rdb",
+      "redis-cli",
+      "redis-sentinel",
+      "redis-server"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "hedgedoc",
+  "display_name": "HedgeDoc",
+  "description": "HedgeDoc Collaborative Markdown",
+  "url": "https://hedgedoc.org/",
+  "command": "exec nix run nixpkgs#hedgedoc",
+  "default_ports": [
+    {
+      "host": 3000,
+      "container": 3000,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-file-text-o",
+  "meta": {
+    "version": "1.10.8",
+    "license": "AGPL-3.0-only",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "SuperSandro2000"
+    ],
+    "programs": [
+      "cleanup",
+      "hedgedoc",
+      "manage_users",
+      "migrate_from_fs_to_minio"
+    ]
+  }
+}

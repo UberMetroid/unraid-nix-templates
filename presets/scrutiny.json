@@ -1,0 +1,30 @@
+{
+  "name": "scrutiny",
+  "display_name": "Scrutiny",
+  "description": "Scrutiny HDD SMART Dashboard",
+  "url": "https://github.com/AnalogJ/scrutiny",
+  "command": "exec nix run nixpkgs#scrutiny",
+  "default_ports": [
+    {
+      "host": 8080,
+      "container": 8080,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "0.9.2",
+    "license": "MIT",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "Samasaur1",
+      "svistoi"
+    ],
+    "programs": [
+      "scrutiny"
+    ]
+  }
+}

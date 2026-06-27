@@ -1,0 +1,27 @@
+{
+  "name": "kanboard",
+  "display_name": "Kanboard",
+  "description": "Kanboard Kanban Board",
+  "url": "https://kanboard.org/",
+  "command": "exec nix run nixpkgs#kanboard",
+  "default_ports": [
+    {
+      "host": 80,
+      "container": 80,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-file-text-o",
+  "meta": {
+    "version": "1.2.52",
+    "license": "MIT",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "yzx9"
+    ],
+    "programs": []
+  }
+}

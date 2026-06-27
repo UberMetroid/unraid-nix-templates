@@ -1,0 +1,29 @@
+{
+  "name": "pufferpanel",
+  "display_name": "PufferPanel",
+  "description": "PufferPanel Game Server GUI",
+  "url": "https://www.pufferpanel.com/",
+  "command": "exec nix run nixpkgs#pufferpanel",
+  "default_ports": [
+    {
+      "host": 8080,
+      "container": 8080,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-gamepad",
+  "meta": {
+    "version": "2.6.9",
+    "license": "",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "tie"
+    ],
+    "programs": [
+      "pufferpanel"
+    ]
+  }
+}

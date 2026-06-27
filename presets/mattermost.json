@@ -1,0 +1,32 @@
+{
+  "name": "mattermost",
+  "display_name": "Mattermost",
+  "description": "Open-source developer collaboration and chat platform",
+  "url": "https://mattermost.com/",
+  "command": "exec nix run nixpkgs#mattermost",
+  "default_ports": [
+    {
+      "host": 8065,
+      "container": 8065,
+      "label": "Web GUI"
+    }
+  ],
+  "icon": "fa-comments",
+  "meta": {
+    "version": "11.7.2",
+    "license": "",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "ryantm",
+      "numinit",
+      "mgdelacroix"
+    ],
+    "programs": [
+      "mattermost",
+      "mmctl"
+    ]
+  }
+}

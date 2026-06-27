@@ -1,0 +1,29 @@
+{
+  "name": "ntfy",
+  "display_name": "NTFY",
+  "description": "NTFY Push Notification Broker",
+  "url": "https://ntfy.sh/",
+  "command": "exec nix run nixpkgs#ntfy -- serve",
+  "default_ports": [
+    {
+      "host": 80,
+      "container": 80,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "2.7.1",
+    "license": "GPL-3.0-only",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "kamilchm"
+    ],
+    "programs": [
+      "ntfy"
+    ]
+  }
+}

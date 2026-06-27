@@ -1,0 +1,30 @@
+{
+  "name": "ersatztv",
+  "display_name": "ErsatzTV",
+  "description": "ErsatzTV Live IP TV Channels",
+  "url": "https://ersatztv.org/",
+  "command": "exec nix run nixpkgs#ersatztv",
+  "default_ports": [
+    {
+      "host": 8409,
+      "container": 8409,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "26.5.1",
+    "license": "Zlib",
+    "platforms": [
+      "x86_64-linux",
+      "aarch64-linux"
+    ],
+    "maintainers": [
+      "allout58"
+    ],
+    "programs": [
+      "ErsatzTV",
+      "ErsatzTV.Scanner"
+    ]
+  }
+}

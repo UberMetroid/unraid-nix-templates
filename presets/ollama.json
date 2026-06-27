@@ -1,0 +1,33 @@
+{
+  "name": "ollama",
+  "display_name": "Ollama (CPU)",
+  "description": "Ollama Local LLM Servicer (CPU version, runs on any hardware)",
+  "url": "https://ollama.ai/",
+  "command": "export OLLAMA_HOST=${BIND_ADDRESS:-0.0.0.0}:${PORT:-11434} && exec nix run nixpkgs#ollama -- serve",
+  "default_ports": [
+    {
+      "host": 11434,
+      "container": 11434,
+      "label": "API"
+    }
+  ],
+  "icon": "fa-magic",
+  "meta": {
+    "version": "0.30.6",
+    "license": "MIT",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "prusnak"
+    ],
+    "programs": [
+      "bench",
+      "engine",
+      "generator",
+      "ollama",
+      "runner"
+    ]
+  }
+}

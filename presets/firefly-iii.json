@@ -1,0 +1,25 @@
+{
+  "name": "firefly-iii",
+  "display_name": "Firefly III",
+  "description": "Firefly Finance ERP",
+  "url": "https://firefly-iii.org/",
+  "command": "exec nix run nixpkgs#firefly-iii",
+  "default_ports": [
+    {
+      "host": 80,
+      "container": 80,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "6.6.3",
+    "license": "AGPL-3.0-only",
+    "platforms": [],
+    "maintainers": [
+      "savyajha",
+      "PatrickDaG"
+    ],
+    "programs": []
+  }
+}

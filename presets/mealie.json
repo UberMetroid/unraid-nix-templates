@@ -1,0 +1,31 @@
+{
+  "name": "mealie",
+  "display_name": "Mealie",
+  "description": "Mealie Recipe Planner",
+  "url": "https://mealie.io/",
+  "command": "exec nix run nixpkgs#mealie",
+  "default_ports": [
+    {
+      "host": 9000,
+      "container": 9000,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "3.16.0",
+    "license": "AGPL-3.0-only",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "litchipi",
+      "anoadragon453",
+      "Eschguy"
+    ],
+    "programs": [
+      "mealie"
+    ]
+  }
+}

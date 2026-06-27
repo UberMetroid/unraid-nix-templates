@@ -1,0 +1,26 @@
+{
+  "name": "overseerr",
+  "display_name": "Overseerr",
+  "description": "Overseerr Media Requests",
+  "url": "https://overseerr.dev/",
+  "command": "exec nix run nixpkgs#overseerr",
+  "default_ports": [
+    {
+      "host": 5055,
+      "container": 5055,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "1.34.0",
+    "license": "MIT",
+    "platforms": [],
+    "maintainers": [
+      "jf-uu"
+    ],
+    "programs": [
+      "overseerr"
+    ]
+  }
+}

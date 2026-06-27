@@ -1,0 +1,38 @@
+{
+  "name": "deluge",
+  "display_name": "Deluge",
+  "description": "Deluge Torrent Client",
+  "url": "https://deluge-torrent.org/",
+  "command": "exec nix run nixpkgs#deluge -- -d -c /config",
+  "default_ports": [
+    {
+      "host": 8112,
+      "container": 8112,
+      "label": "Web GUI"
+    },
+    {
+      "host": 58846,
+      "container": 58846,
+      "label": "Daemon"
+    }
+  ],
+  "icon": "fa-download",
+  "meta": {
+    "version": "2.2.0",
+    "license": "GPL-3.0-or-later",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "a-peirogon"
+    ],
+    "programs": [
+      "deluge",
+      "deluge-console",
+      "deluge-gtk",
+      "deluge-web",
+      "deluged"
+    ]
+  }
+}

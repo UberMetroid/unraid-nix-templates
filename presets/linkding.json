@@ -1,0 +1,30 @@
+{
+  "name": "linkding",
+  "display_name": "Linkding",
+  "description": "Linkding Bookmark Manager",
+  "url": "https://github.com/sissbruecker/linkding",
+  "command": "exec nix run nixpkgs#linkding",
+  "default_ports": [
+    {
+      "host": 9090,
+      "container": 9090,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-bookmark-o",
+  "meta": {
+    "version": "1.45.0",
+    "license": "MIT",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "squat"
+    ],
+    "programs": [
+      "linkding",
+      "linkding-bootstrap"
+    ]
+  }
+}

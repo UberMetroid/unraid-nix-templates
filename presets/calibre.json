@@ -1,0 +1,50 @@
+{
+  "name": "calibre",
+  "display_name": "Calibre",
+  "description": "Calibre Ebook Manager",
+  "url": "https://calibre-ebook.com/",
+  "command": "exec nix run nixpkgs#calibre",
+  "default_ports": [
+    {
+      "host": 8080,
+      "container": 8080,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-book",
+  "meta": {
+    "version": "9.9.0",
+    "license": "GPL-3.0-or-later",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "pSub",
+      "sempiternal-aurora"
+    ],
+    "programs": [
+      "calibre",
+      "calibre-complete",
+      "calibre-customize",
+      "calibre-debug",
+      "calibre-parallel",
+      "calibre-server",
+      "calibre-smtp",
+      "calibre-uninstall",
+      "calibredb",
+      "ebook-convert",
+      "ebook-device",
+      "ebook-edit",
+      "ebook-meta",
+      "ebook-polish",
+      "ebook-viewer",
+      "fetch-ebook-metadata",
+      "lrf2lrs",
+      "lrfviewer",
+      "lrs2lrf",
+      "markdown-calibre",
+      "web2disk"
+    ]
+  }
+}

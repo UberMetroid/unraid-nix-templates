@@ -1,0 +1,30 @@
+{
+  "name": "vikunja",
+  "display_name": "Vikunja",
+  "description": "Vikunja Task Manager",
+  "url": "https://vikunja.io/",
+  "command": "exec nix run nixpkgs#vikunja",
+  "default_ports": [
+    {
+      "host": 3456,
+      "container": 3456,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "2.3.0",
+    "license": "AGPL-3.0-or-later",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "leona-ya",
+      "adamcstephens"
+    ],
+    "programs": [
+      "vikunja"
+    ]
+  }
+}

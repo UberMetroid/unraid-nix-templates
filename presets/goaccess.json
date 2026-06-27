@@ -1,0 +1,20 @@
+{
+  "name": "goaccess",
+  "display_name": "GoAccess",
+  "description": "GoAccess Log Visualizer",
+  "url": "https://goaccess.io/",
+  "command": "exec nix run nixpkgs#goaccess",
+  "default_ports": [
+    {
+      "host": 7890,
+      "container": 7890,
+      "label": "WebSockets"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "programs": [
+      "goaccess"
+    ]
+  }
+}

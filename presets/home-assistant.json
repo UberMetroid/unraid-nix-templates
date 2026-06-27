@@ -1,0 +1,30 @@
+{
+  "name": "home-assistant",
+  "display_name": "Home Assistant",
+  "description": "Home Assistant Smart Automation",
+  "url": "https://www.home-assistant.io/",
+  "command": "exec nix run nixpkgs#home-assistant -- --config /config",
+  "default_ports": [
+    {
+      "host": 8123,
+      "container": 8123,
+      "label": "Web GUI"
+    }
+  ],
+  "icon": "fa-home",
+  "meta": {
+    "version": "2026.6.1",
+    "license": "Apache-2.0",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "dotlambda",
+      "mweinelt"
+    ],
+    "programs": [
+      "hass"
+    ]
+  }
+}

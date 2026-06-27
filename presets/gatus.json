@@ -1,0 +1,29 @@
+{
+  "name": "gatus",
+  "display_name": "Gatus",
+  "description": "Gatus Service Monitor",
+  "url": "https://gatus.io/",
+  "command": "exec nix run nixpkgs#gatus",
+  "default_ports": [
+    {
+      "host": 8080,
+      "container": 8080,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "5.35.0",
+    "license": "Apache-2.0",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "undefined-moe"
+    ],
+    "programs": [
+      "gatus"
+    ]
+  }
+}

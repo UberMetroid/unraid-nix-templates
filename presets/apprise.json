@@ -1,0 +1,29 @@
+{
+  "name": "apprise",
+  "display_name": "Apprise",
+  "description": "Apprise Notification Push API",
+  "url": "https://github.com/caronc/apprise",
+  "command": "exec nix run nixpkgs#apprise",
+  "default_ports": [
+    {
+      "host": 8000,
+      "container": 8000,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "1.11.0",
+    "license": "BSD-2-Clause",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "getchoo"
+    ],
+    "programs": [
+      "apprise"
+    ]
+  }
+}

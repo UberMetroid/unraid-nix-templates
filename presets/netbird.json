@@ -1,0 +1,36 @@
+{
+  "name": "netbird",
+  "display_name": "Netbird",
+  "description": "Netbird Mesh VPN Overlay",
+  "url": "https://netbird.io/",
+  "command": "exec nix run nixpkgs#netbird",
+  "default_ports": [
+    {
+      "host": 80,
+      "container": 80,
+      "label": "HTTP"
+    },
+    {
+      "host": 443,
+      "container": 443,
+      "label": "HTTPS"
+    }
+  ],
+  "icon": "fa-key",
+  "meta": {
+    "version": "0.72.2",
+    "license": "BSD-3-Clause",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "nazarewk",
+      "saturn745",
+      "LoCrealloc"
+    ],
+    "programs": [
+      "netbird"
+    ]
+  }
+}

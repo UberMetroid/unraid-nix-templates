@@ -1,0 +1,30 @@
+{
+  "name": "tautulli",
+  "display_name": "Tautulli",
+  "description": "Tautulli Plex Monitoring",
+  "url": "https://tautulli.com/",
+  "command": "exec nix run nixpkgs#tautulli -- --config /config/config.ini --datadir /config",
+  "default_ports": [
+    {
+      "host": 8181,
+      "container": 8181,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "2.17.1",
+    "license": "GPL-3.0-or-later",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "rhoriguchi"
+    ],
+    "programs": [
+      "plexpy",
+      "tautulli"
+    ]
+  }
+}

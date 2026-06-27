@@ -1,0 +1,31 @@
+{
+  "name": "radarr",
+  "display_name": "Radarr",
+  "description": "Radarr Movie Manager",
+  "url": "https://radarr.video/",
+  "command": "exec nix run nixpkgs#radarr",
+  "default_ports": [
+    {
+      "host": 7878,
+      "container": 7878,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-film",
+  "meta": {
+    "version": "6.1.1.10360",
+    "license": "GPL-3.0-only",
+    "platforms": [
+      "x86_64-linux",
+      "aarch64-linux"
+    ],
+    "maintainers": [
+      "purcell",
+      "nyanloutre",
+      "karaolidis"
+    ],
+    "programs": [
+      "Radarr"
+    ]
+  }
+}

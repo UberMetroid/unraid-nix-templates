@@ -1,0 +1,28 @@
+{
+  "name": "discourse",
+  "display_name": "Discourse",
+  "description": "Modern discussion platform for community forum discussions",
+  "url": "https://www.discourse.org/",
+  "command": "exec nix run nixpkgs#discourse",
+  "default_ports": [
+    {
+      "host": 3000,
+      "container": 3000,
+      "label": "Web GUI"
+    }
+  ],
+  "icon": "fa-comments",
+  "meta": {
+    "version": "2026.1.4",
+    "license": "GPL-2.0-or-later",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "leona-ya",
+      "talyz"
+    ],
+    "programs": []
+  }
+}

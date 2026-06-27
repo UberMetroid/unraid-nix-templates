@@ -1,0 +1,31 @@
+{
+  "name": "grafana",
+  "display_name": "Grafana",
+  "description": "Grafana Visual Dashboards",
+  "url": "https://grafana.com/",
+  "command": "exec nix run nixpkgs#grafana",
+  "default_ports": [
+    {
+      "host": 3000,
+      "container": 3000,
+      "label": "Web GUI"
+    }
+  ],
+  "icon": "fa-bar-chart",
+  "meta": {
+    "version": "13.0.2",
+    "license": "AGPL-3.0-only",
+    "platforms": [
+      "x86_64-linux",
+      "aarch64-linux"
+    ],
+    "maintainers": [
+      "fpletz",
+      "globin",
+      "Ma27"
+    ],
+    "programs": [
+      "grafana"
+    ]
+  }
+}

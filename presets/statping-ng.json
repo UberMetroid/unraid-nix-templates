@@ -1,0 +1,29 @@
+{
+  "name": "statping-ng",
+  "display_name": "Statping-ng",
+  "description": "Statping-ng Status Page",
+  "url": "https://github.com/statping-ng/statping-ng",
+  "command": "exec nix run nixpkgs#statping-ng",
+  "default_ports": [
+    {
+      "host": 8080,
+      "container": 8080,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "0.93.0",
+    "license": "GPL-3.0-only",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "FKouhai"
+    ],
+    "programs": [
+      "statping-ng"
+    ]
+  }
+}

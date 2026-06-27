@@ -1,0 +1,30 @@
+{
+  "name": "jellyseerr",
+  "display_name": "Jellyseerr",
+  "description": "Jellyseerr Media Requests",
+  "url": "https://github.com/Fallenbagel/jellyseerr",
+  "command": "exec nix run nixpkgs#jellyseerr",
+  "default_ports": [
+    {
+      "host": 5055,
+      "container": 5055,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "3.3.0",
+    "license": "MIT",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "camillemndn",
+      "fallenbagel"
+    ],
+    "programs": [
+      "seerr"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "wallabag",
+  "display_name": "Wallabag",
+  "description": "Wallabag Read Later Reader",
+  "url": "https://wallabag.org/",
+  "command": "exec nix run nixpkgs#wallabag",
+  "default_ports": [
+    {
+      "host": 80,
+      "container": 80,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-share-alt",
+  "meta": {
+    "version": "2.6.14",
+    "license": "MIT",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [],
+    "programs": [
+      "console",
+      "doctrine",
+      "doctrine-dbal",
+      "doctrine-migrations",
+      "generate-defuse-key",
+      "openapi",
+      "sql-formatter",
+      "var-dump-server",
+      "yaml-lint"
+    ]
+  }
+}

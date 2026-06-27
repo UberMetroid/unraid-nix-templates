@@ -1,0 +1,27 @@
+{
+  "name": "mediawiki",
+  "display_name": "MediaWiki",
+  "description": "MediaWiki Engine",
+  "url": "https://www.mediawiki.org/",
+  "command": "exec nix run nixpkgs#mediawiki",
+  "default_ports": [
+    {
+      "host": 80,
+      "container": 80,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-file-text-o",
+  "meta": {
+    "version": "1.45.3",
+    "license": "GPL-2.0-or-later",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "SuperSandro2000"
+    ],
+    "programs": []
+  }
+}

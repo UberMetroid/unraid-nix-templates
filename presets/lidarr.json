@@ -1,0 +1,30 @@
+{
+  "name": "lidarr",
+  "display_name": "Lidarr",
+  "description": "Lidarr Music Manager",
+  "url": "https://lidarr.audio/",
+  "command": "exec nix run nixpkgs#lidarr",
+  "default_ports": [
+    {
+      "host": 8686,
+      "container": 8686,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-music",
+  "meta": {
+    "version": "3.1.0.4875",
+    "license": "GPL-3.0-only",
+    "platforms": [
+      "x86_64-linux",
+      "aarch64-linux"
+    ],
+    "maintainers": [
+      "ramonacat",
+      "karaolidis"
+    ],
+    "programs": [
+      "Lidarr"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "seafile-shared",
+  "display_name": "Seafile Shared",
+  "description": "Shared components of Seafile: seafile-daemon, libseafile, libseafile python bindings, manuals, and icons",
+  "url": "https://www.seafile.com/",
+  "command": "exec nix run nixpkgs#seafile-shared -- seaf-daemon -f -c /config",
+  "default_ports": [
+    {
+      "host": 8000,
+      "container": 8000,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-cloud",
+  "meta": {
+    "version": "9.0.15",
+    "license": "GPL-2.0-or-later",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "schmittlauch"
+    ],
+    "programs": [
+      "seaf-cli",
+      "seaf-daemon"
+    ]
+  }
+}

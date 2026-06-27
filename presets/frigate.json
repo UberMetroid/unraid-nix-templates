@@ -1,0 +1,27 @@
+{
+  "name": "frigate",
+  "display_name": "Frigate NVR",
+  "description": "Frigate NVR AI Surveillance",
+  "url": "https://frigate.video/",
+  "command": "exec nix run nixpkgs#frigate",
+  "default_ports": [
+    {
+      "host": 5000,
+      "container": 5000,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-server",
+  "meta": {
+    "version": "0.17.1",
+    "license": "MIT",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "mweinelt"
+    ],
+    "programs": []
+  }
+}

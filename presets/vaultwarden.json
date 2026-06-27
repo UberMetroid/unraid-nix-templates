@@ -1,0 +1,30 @@
+{
+  "name": "vaultwarden",
+  "display_name": "Vaultwarden",
+  "description": "Vaultwarden Password Manager",
+  "url": "https://github.com/dani-garcia/vaultwarden",
+  "command": "exec nix run nixpkgs#vaultwarden",
+  "default_ports": [
+    {
+      "host": 8222,
+      "container": 80,
+      "label": "HTTP"
+    }
+  ],
+  "icon": "fa-lock",
+  "meta": {
+    "version": "1.36.0",
+    "license": "AGPL-3.0-only",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "dotlambda",
+      "SuperSandro2000"
+    ],
+    "programs": [
+      "vaultwarden"
+    ]
+  }
+}

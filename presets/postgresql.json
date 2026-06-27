@@ -1,0 +1,68 @@
+{
+  "name": "postgresql",
+  "display_name": "PostgreSQL",
+  "description": "PostgreSQL SQL Server",
+  "url": "https://www.postgresql.org/",
+  "command": "exec nix run nixpkgs#postgresql",
+  "default_ports": [
+    {
+      "host": 5432,
+      "container": 5432,
+      "label": "Postgres Port"
+    }
+  ],
+  "icon": "fa-database",
+  "meta": {
+    "version": "17.10",
+    "license": "PostgreSQL",
+    "platforms": [
+      "aarch64-linux",
+      "x86_64-linux"
+    ],
+    "maintainers": [
+      "Ma27",
+      "thoughtpolice",
+      "wolfgangwalther"
+    ],
+    "programs": [
+      "/nix/store/8zm2sma9jgvq101yy4x45za4y28yd164-postgresql-17.10/bin:",
+      "clusterdb",
+      "createdb",
+      "createuser",
+      "dropdb",
+      "dropuser",
+      "initdb",
+      "oid2name",
+      "pg_amcheck",
+      "pg_archivecleanup",
+      "pg_basebackup",
+      "pg_checksums",
+      "pg_combinebackup",
+      "pg_controldata",
+      "pg_createsubscriber",
+      "pg_ctl",
+      "pg_dump",
+      "pg_dumpall",
+      "pg_isready",
+      "pg_receivewal",
+      "pg_recvlogical",
+      "pg_resetwal",
+      "pg_restore",
+      "pg_rewind",
+      "pg_test_fsync",
+      "pg_test_timing",
+      "pg_upgrade",
+      "pg_verifybackup",
+      "pg_waldump",
+      "pg_walsummary",
+      "pgbench",
+      "postgres",
+      "psql",
+      "reindexdb",
+      "vacuumdb",
+      "vacuumlo",
+      "/nix/store/csjq4w1qavdihdq7hywbr0cdf2rzpfz9-postgresql-17.10-man:",
+      "share"
+    ]
+  }
+}
