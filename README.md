@@ -48,7 +48,7 @@ All templates are simple, structured JSON files named after their service identi
 ## 🔄 Syncing Mechanics
 
 * **Background Sync**: Unraid Nix plugin automatically queries and downloads the latest main zip of this repository in the background every time the Unraid storage array is mounted.
-* **Manual Refresh**: You can force an instant refresh of your local template cache by going to the **System Settings** subtab of the Nix tab in your Unraid WebGUI and clicking **Force Sync Templates**.
+* **Manual Refresh**: You can force an instant refresh of your local template cache by going to the **Settings** subtab of the Nix tab in your Unraid WebGUI and clicking **Force Sync Templates**.
 
 ---
 
