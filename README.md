@@ -4,7 +4,7 @@ This repository serves as the official preset template library for the **[Unraid
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 The template registry is split into two directories:
 * **`/presets`**: Templates for standard single-process applications (e.g. Radarr, Caddy, Jellyfin).
@@ -12,7 +12,7 @@ The template registry is split into two directories:
 
 ---
 
-## 🛠️ Template Schema (How to write a template)
+## Template Schema (How to write a template)
 
 All templates are simple, structured JSON files named after their service identifier (e.g., `presets/jellyfin.json`). Below is the standard schema:
 
@@ -45,7 +45,7 @@ All templates are simple, structured JSON files named after their service identi
 
 ---
 
-## 🔄 Syncing Mechanics
+## Syncing Mechanics
 
 * **Background Sync**: Unraid Nix plugin automatically queries and downloads the latest main zip of this repository in the background every time the Unraid storage array is mounted.
 * **Manual Refresh**: You can force an instant refresh of your local template cache by going to the **Settings** subtab of the Nix tab in your Unraid WebGUI and clicking **Force Sync Templates**.
